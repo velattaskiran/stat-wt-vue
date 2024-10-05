@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Logo from "../assets/image/vt.png";
+import wtstat from "../assets/image/wt-stat.png";
 // import NavbarTop from "./Navbar-Top.vue";
-import Welo from "../assets/image/welo.jpg"
 import { ref } from "vue";
 const mobileNav = ref(false);
 const rotate = () => {
@@ -13,32 +13,46 @@ const rotate = () => {
     <div>
         <header>
             <NavbarTop/>
-            <nav class="flex-between fixed top-0 z-20 h-[66px] w-full border-b border-gray-200 bg-blue dark:bg-gray-900 px-4 lg:h-[120px] ">
+            <nav class="flex-between fixed top-0 z-20 h-[66px] w-full border-b border-gray-200 bg-blue dark:bg-gray-900 px-4 lg:h-[120px] ">                
                 <div class="flex items-center space-x-10">
                     <div class="profile-image">
-                        <router-link to="/">
-                            <img :src="Welo" alt="Welo">
+                        <router-link to="/aboutView">
+                            <img :src="wtstat" alt="Welo">
                         </router-link>
                     </div>
                     <div class="hidden lg:block">
                         <ul class="inline-flex space-x-8">
                             <li class="navbar-li-tag">
-                                <router-link to="/aboutView">
-                                    About
-                                </router-link>
+                                <div class="inline-flex items-center p-2 border border-gray-300 rounded-lg">
+                                    <router-link to="/">
+                                        Leagues
+                                    </router-link>
+                                </div>
                             </li>
                             <li class="navbar-li-tag">
-                                <router-link to="/resumeView">
-                                    Blog
-                                </router-link>
+                                <div class="inline-flex items-center p-2 border border-gray-300 rounded-lg">
+                                    <router-link to="/resumeView">
+                                        Teams
+                                    </router-link>
+                                </div>
+                            </li>
+                            <li class="navbar-li-tag">
+                                <div class="inline-flex items-center p-2 border border-gray-300 rounded-lg">
+                                    <router-link to="/resumeView">
+                                        Players
+                                    </router-link>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-
                 <div class="hidden lg:block">
                     <ul class="inline-flex space-x-8">
-                        <li class="navbar-li-tag"><router-link to="/">Home</router-link></li>
+                        <li class="navbar-li-tag">
+                            <router-link to="/">
+                                Home
+                            </router-link>
+                        </li>
                         <li class="navbar-li-tag">
                             <router-link to="/projectView">
                                 Projects
@@ -97,19 +111,10 @@ const rotate = () => {
                 </transition>
             </nav>
             <nav class="flex-between fixed bottom-0 z-20 h-[66px] w-full border-t border-gray-200 bg-blue dark:bg-gray-900 px-4 lg:h-[50px] ">
-                <div class="hidden lg:block">
-                    <ul class="inline-flex space-x-8">
-                        <li class="navbar-li-tag">
-                            <router-link to="/aboutView">
-                                www.scorewt.com
-                            </router-link>
-                        </li>
-                    </ul>
-                </div>
                 <div class="flex flex-col min-h-screen">
                     <footer class="absolute bottom-0 right-0 p-4 text-sm text-gray-500">
                         <div class="text-right">
-                            Velat Taşkıran Ⓒ 2024
+                             Ⓒ 2024 WTStat – All Rights Reserved.
                         </div>
                     </footer>
                 </div>
@@ -134,7 +139,7 @@ const rotate = () => {
 }
 .profile-image {
   width: 80px; /* Genişlik */
-  height: 100px; /* Yükseklik */
+  height: 50px; /* Yükseklik */
   overflow: hidden; /* Taşma durumunda gizle */
   border-radius: 15%; /* Yuvarlak hale getirmek için */
 }

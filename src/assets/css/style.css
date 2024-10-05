@@ -6,7 +6,7 @@
 
 @layer base {
     body {
-        @apply min-h-screen w-full font-Inter bg-[#030922] text-white
+        @apply min-h-screen w-full font-Inter bg-[#012926] text-white
     }
 }
 
