@@ -33,7 +33,7 @@
     }
 
     .active {
-        @apply text-blue-500
+        @apply text-green-500
     }
 
     .box1,
@@ -81,7 +81,7 @@
     }
 
     .navbar-li-tag {
-        @apply cursor-pointer hover:text-blue-800 transition duration-200 ease-in
+        @apply cursor-pointer hover:text-green-800 transition duration-200 ease-in
     }
 
     .animated-content {

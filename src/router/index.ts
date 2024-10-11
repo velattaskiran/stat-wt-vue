@@ -8,27 +8,33 @@ const routes = [
     },
     
     {
-        path: "/projectView",
-        name: "ProjectView",
+        path: "/leaguesView",
+        name: "LeaguesView",
         component: () => import("../views/CoinView.vue")
     },
 
     {
-        path: "/resumeView",
-        name: "ResumeView",
-        beforeEnter() {
-            // PDF dosyasının URL'si
-            const pdfUrl = "public/TaskiranVelatCV.pdf"; // Bu URL public klasöründen olmalı veya tam URL belirtmelisiniz
-            // Yeni sekmede PDF'i aç
-            window.open(pdfUrl, '_blank');
-            next(false);
-        }
+        path: "/teamsView",
+        name: "TeamsView",
+        component: () => import("../views/CoinView.vue")
+    },
+    
+    {
+        path: "/playersView",
+        name: "PlayersView",
+        component: () => import("../views/Home.vue")
     },
 
     {
-        path: "/contactView",
-        name: "ContactView",
-        component: () => import("../views/NewsView.vue")
+        path: "/predictionMachineViews",
+        name: "PredictionMachine",
+        component: () => import("../views/CoinView.vue")
+    },
+    
+    {
+        path: "/bettingTipsView",
+        name: "BettingTips",
+        component: () => import("../views/Home.vue")
     }
 ];
 

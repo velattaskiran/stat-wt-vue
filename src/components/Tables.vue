@@ -23,7 +23,7 @@ const coinFilter = computed(() => {
 
 <template>
     <main id="table">
-        <div class="overflow-x-auto text-white mx-6 md:mt-40 rounded-md">
+        <div class="overflow-x-auto text-white mx-10 md:mt-40 rounded-md">
             <table class="table-fixed cursor-pointer">
                 <thead>
                     <tr class="text-white text-sm text-left">
@@ -40,8 +40,8 @@ const coinFilter = computed(() => {
                         :key="coin.uuid">
                         <td class="p-1 flex items-center">
                             <p class="mr-4">{{ coin.rank }}.</p>
-                            <img :src="coin.iconUrl" :alt="coin.name" class="w-4 h-4 rounded-full mr-1" />
                             <p class="font-bold mr-1 hidden md:block">{{ coin.name }}</p>
+                            <img :src="coin.iconUrl" :alt="coin.name" class="w-4 h-4 rounded-full mr-1" />
                             <p class="uppercase text-gray-500 mx-2">
                                 {{ coin.symbol }}
                             </p>

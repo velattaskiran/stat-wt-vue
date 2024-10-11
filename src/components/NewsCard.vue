@@ -47,7 +47,7 @@ const formatDate = (dateString: string) => {
 
             <div>
                 <a :href="props.url" target="_blank">
-                    <button class="py-1 px-2 border border-blue-500 rounded-md hover:border hover:border-blue-600 hover:bg-blue-600 transition duration-200 ease-in">
+                    <button class="py-1 px-2 border border-green-500 rounded-md hover:border hover:border-green-600 hover:bg-green-600 transition duration-200 ease-in">
                         Read More
                     </button>
                 </a>

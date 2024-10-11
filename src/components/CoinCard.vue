@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import useFormat from "../composables/useFormat";
-import usePriceChange from "../composables/usePriceChange";
-import { ChevronDownIcon, ChevronUpIcon } from '@heroicons/vue/24/solid';
 interface Props {
     coinName: string,
     price: string,
@@ -30,18 +28,6 @@ const props = defineProps<Props>();
         
                 <div>
                     <h2>Market Cap: ${{ useFormat(props.marketCap )}}</h2>
-                </div>
-        
-                <div class="flex items-center space-x-2">
-                    <span>24Hrs: </span>
-                    <div v-if="usePriceChange(props.change)" class="text-red-500 flex items-center">
-                        <ChevronDownIcon class="mr-1 h-4 w-4 " />
-                        {{ props.change }}%
-                    </div>
-                    <div v-else class="text-green-500 flex items-center">
-                        <ChevronUpIcon class="mr-1 h-4 w-4 " />
-                        {{ props.change }}%
-                    </div>
                 </div>
             </div>
         </div>
