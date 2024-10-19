@@ -10,7 +10,7 @@ const routes = [
     {
         path: "/leaguesView",
         name: "LeaguesView",
-        component: () => import("../views/CoinView.vue")
+        component: () => import("../views/LeagueView.vue")
     },
 
     {
