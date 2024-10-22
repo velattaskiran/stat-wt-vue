@@ -17,7 +17,7 @@
                     <td> {{ league.name }} </td>
                     <td> {{ league.country }} </td>
                     <td> {{ league.foundedYear }} </td>
-                    <td> {{ league.iconPath }} </td>
+                    <td> {{ league.logoUrl }} </td>
                 </tr>
             </tbody>
         </table>

@@ -3,7 +3,7 @@
         leagueName:     string,
         country:        string,
         foundedYear:    string,
-        iconPath:       string,
+        logoUrl:       string,
     }
     const props = defineProps<Props>();
     const handleCardClick = () => {
@@ -16,7 +16,7 @@
         <div @click="handleCardClick" class="cursor-pointer flex-center">
             <div class="px-4 space-y-4 w-36 h-36 bg-[#4B9077]/20 rounded-md">
                 <div class="grid-center my-8">
-                    <img :src="props.iconPath" :alt="props.leagueName" class="w-30 h-20" />
+                    <img :src="props.logoUrl" :alt="props.leagueName" class="w-30 h-20" />
                 </div>
         
                 <div>

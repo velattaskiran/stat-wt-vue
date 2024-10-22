@@ -4,5 +4,5 @@ export interface ILeague {
     name:           string;
     country:        string;
     foundedYear:    string;
-    iconPath:       string;
+    logoUrl:       string;
 }

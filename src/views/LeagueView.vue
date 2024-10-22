@@ -30,7 +30,7 @@ fetchLeagues();
         </div>
 
         <div v-else v-for="league in leagues" :key="league.id" class="p-10">
-            <LeagueCard :leagueName="league.name" :country="league.country" :iconPath="league.iconPath" :foundedYear="league.foundedYear"
+            <LeagueCard :leagueName="league.name" :country="league.country" :logoUrl="league.logoUrl" :foundedYear="league.foundedYear"
                 :loading="loading" />
         </div>
     </div>

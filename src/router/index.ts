@@ -16,7 +16,7 @@ const routes = [
     {
         path: "/teamsView",
         name: "TeamsView",
-        component: () => import("../views/CoinView.vue")
+        component: () => import("../views/TeamView.vue")
     },
     
     {
