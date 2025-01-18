@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import LeagueService from '../services/LeagueService.js'
+import LeagueService from '../services/LeagueService'
 import LeagueCard from "../components/LeagueCard.vue";
 import Loader from "../components/Loader.vue";
 import { ref } from "vue";
-import League from "../components/League.vue";
 import {ILeague} from "../Types/leagues.interface";
 const leagues = ref<ILeague[]>([])
 const loading = ref(false);
@@ -30,7 +29,7 @@ fetchLeagues();
         </div>
 
         <div v-else v-for="league in leagues" :key="league.id" class="p-10">
-            <LeagueCard :leagueName="league.name" :country="league.country" :logoUrl="league.logoUrl" :foundedYear="league.foundedYear"
+            <LeagueCard :leagueId="league.id" :leagueName="league.name" :country="league.country" :logoUrl="league.logoUrl" :foundedYear="league.foundedYear"
                 :loading="loading" />
         </div>
     </div>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TeamService from '../services/TeamService.js'
+import TeamService from '../services/TeamService'
 import TeamCard from "../components/TeamCard.vue";
 import Loader from "../components/Loader.vue";
 import { ref } from "vue";

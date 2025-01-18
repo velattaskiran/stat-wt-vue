@@ -11,7 +11,7 @@ const rotate = () => {
     <div>
         <header>
             <NavbarTop/>
-            <nav class="flex-between fixed top-0 z-20 h-[66px] w-full border-b border-gray-200 bg-green dark:bg-gray-900 px-10 lg:h-[120px] ">                
+            <nav class="flex-between fixed top-0 z-20 h-[66px] w-full border-b border-gray-200 bg-[#011511] dark:bg-gray-900 px-10 lg:h-[80px] ">                
                 <div class="flex items-center space-x-10">
                     <div class="profile-image">
                         <router-link to="/">
@@ -59,9 +59,9 @@ const rotate = () => {
                     </ul>
                 </div>
             </nav>
-            <nav class="flex-between fixed bottom-0 z-20 h-[66px] w-full border-t border-gray-200 bg-green dark:bg-gray-900 px-4 lg:h-[50px] ">
+            <nav class="flex-between fixed bottom-0 z-20 h-[66px] w-full border-t border-gray-200 bg-[#011511] dark:bg-gray-900 px-4 lg:h-[40px] ">
                 <div class="flex flex-col min-h-screen">
-                    <footer class="absolute bottom-0 right-0 p-4 text-sm text-gray-500">
+                    <footer class="absolute bottom-0 right-0 p-2 text-sm text-gray-500">
                         <div class="text-right">
                              Ⓒ 2024 WTStat – All Rights Reserved.
                         </div>
@@ -98,3 +98,9 @@ const rotate = () => {
   object-fit: cover; /* Resmin oranını koruyarak kapsasın */
 }
 </style>
+
+<script lang="ts">
+    export default {
+        name: 'Navbar'
+    };
+</script>

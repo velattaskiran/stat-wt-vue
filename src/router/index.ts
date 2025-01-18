@@ -1,10 +1,9 @@
 import { createRouter , createWebHistory } from "vue-router";
-import Home from "../views/Home.vue";
 const routes = [
     {
         path: "/",
         name: "Home",
-        component: Home
+        component: () => import("../views/LeagueView.vue")
     },
     
     {
@@ -22,19 +21,26 @@ const routes = [
     {
         path: "/playersView",
         name: "PlayersView",
-        component: () => import("../views/Home.vue")
+        component: () => import("../views/PlayerView.vue")
     },
 
     {
         path: "/predictionMachineViews",
         name: "PredictionMachine",
-        component: () => import("../views/CoinView.vue")
+        component: () => import("../views/PlayerView.vue")
     },
     
     {
         path: "/bettingTipsView",
         name: "BettingTips",
-        component: () => import("../views/Home.vue")
+        component: () => import("../views/PlayerView.vue")
+    },
+    // Dinamik rota lig ismine göre
+    {
+        path: "/leagues/:leagueId",
+        name: "LeagueDetail",
+        component: () => import("../views/LeagueDetailView.vue"),
+        props: true, // Props olarak parametreyi al
     }
 ];
 
