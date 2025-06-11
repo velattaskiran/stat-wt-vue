@@ -10,8 +10,7 @@ const rotate = () => {
 <template>
     <div>
         <header>
-            <NavbarTop/>
-            <nav class="flex-between fixed top-0 z-20 h-[66px] w-full border-b border-gray-200 bg-[#011511] dark:bg-gray-900 px-10 lg:h-[80px] ">                
+            <nav class="flex-between fixed top-0 z-20 h-[66px] w-full border-b border-gray-200 bg-[#f9fafb] dark:bg-gray-900 px-10 lg:h-[80px] text-green-800">                
                 <div class="flex items-center space-x-10">
                     <div class="profile-image">
                         <router-link to="/">
@@ -21,21 +20,21 @@ const rotate = () => {
                     <div class="hidden lg:block">
                         <ul class="inline-flex space-x-8">
                             <li class="navbar-li-tag">
-                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base md:py-2.5 md:px-6">
+                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-6">
                                     <router-link to="/leaguesView">
                                         Leagues
                                     </router-link>
                                 </div>
                             </li>
                             <li class="navbar-li-tag">
-                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base md:py-2.5 md:px-8">
+                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-8">
                                     <router-link to="/teamsView">
                                         Teams
                                     </router-link>
                                 </div>
                             </li>
                             <li class="navbar-li-tag">
-                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base md:py-2.5 md:px-7">
+                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
                                     <router-link to="/playersView">
                                         Players
                                     </router-link>
@@ -46,12 +45,12 @@ const rotate = () => {
                 </div>
                 <div class="hidden lg:block">
                     <ul class="inline-flex space-x-8">
-                        <li class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base md:py-2.5 md:px-7">
+                        <li class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
                             <router-link to="/predictionMachineViews">
                                 Prediction Machine
                             </router-link>
                         </li>
-                        <li class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base md:py-2.5 md:px-7">
+                        <li class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
                             <router-link to="/bettingTipsView">
                                 Betting Tips
                             </router-link>
@@ -59,11 +58,11 @@ const rotate = () => {
                     </ul>
                 </div>
             </nav>
-            <nav class="flex-between fixed bottom-0 z-20 h-[66px] w-full border-t border-gray-200 bg-[#011511] dark:bg-gray-900 px-4 lg:h-[40px] ">
+            <nav class="flex-between fixed bottom-0 z-20 h-[66px] w-full border-t border-gray-200 bg-[#f9fafb] dark:bg-gray-900 px-4 lg:h-[40px] ">
                 <div class="flex flex-col min-h-screen">
                     <footer class="absolute bottom-0 right-0 p-2 text-sm text-gray-500">
                         <div class="text-right">
-                             Ⓒ 2024 WTStat – All Rights Reserved.
+                             Ⓒ 2024 WTstat – All Rights Reserved.
                         </div>
                     </footer>
                 </div>

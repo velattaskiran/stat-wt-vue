@@ -22,8 +22,8 @@
                     <td> {{ player.number }} </td>
                     <td> {{ player.url }} </td>
                     <td> {{ player.position }} </td>
-                    <td> {{ player.team_id }} </td>
-                    <td> {{ player.team_name }} </td>
+                    <td> {{ player.teamId }} </td>
+                    <td> {{ player.teamName }} </td>
                 </tr>
             </tbody>
         </table>

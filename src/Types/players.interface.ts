@@ -4,8 +4,8 @@ export interface IPlayer {
     name:       string;
     age:        string;
     number:     string;
-    url:        string;
+    photoUrl:   string;
     position:   string;
-    team_id:    string;
-    team_name:  string;
+    teamId:     string;
+    teamName:   string;
 }

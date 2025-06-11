@@ -1,44 +1,46 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
-    interface Props {
-        teams: {
-            teamName:           string;
-            teamLogo:           string;
-            rank:               number;
-            points:             number;
-            goalsDiff:          number;
-            form:               string;
-            description:        string;
-            played:             number;
-            win:                number;
-            draw:               number;
-            lose:               number;
-            goalsFor:           number;
-            goalsAgainst:       number;
-            homePlayed:         number;
-            homeWin:            number;
-            homeDraw:           number;
-            homeLose:           number;
-            homeGoalsFor:       number;
-            homeGoalsAgainst:   number;
-            awayPlayed:         number;
-            awayWin:            number;
-            awayDraw:           number;
-            awayLose:           number;
-            awayGoalsFor:       number;
-            awayGoalsAgainst:   number;
-            updated:            string;
-        }[];
+    interface Team {
+        leagueName: string;
+        teamName: string;
+        teamLogo: string;
+        rank: number;
+        points: number;
+        goalsDiff: number;
+        form: string;
+        description: string;
+        played: number;
+        win: number;
+        draw: number;
+        lose: number;
+        goalsFor: number;
+        goalsAgainst: number;
+        homePlayed: number;
+        homeWin: number;
+        homeDraw: number;
+        homeLose: number;
+        homeGoalsFor: number;
+        homeGoalsAgainst: number;
+        awayPlayed: number;
+        awayWin: number;
+        awayDraw: number;
+        awayLose: number;
+        awayGoalsFor: number;
+        awayGoalsAgainst: number;
+        updated: string;
     }
-    const props = defineProps<Props>();
+const { teams } = defineProps<{ teams: Team[] }>();
 </script>
 
 <template>
     <main id="table">
-        <div class="overflow-x-auto text-white mx-5 md:mt-20 mb-10 rounded-md bg-[#012523]">
+        <div class="flex justify-center mx-5 mt-10">
+            <h2 class="text-2xl font-bold text-green-900">{{ teams[0]?.leagueName }}</h2>
+        </div>
+        <div class="overflow-x-auto text-green-800 mx-5 md:mt-2 mb-10 rounded-md bg-[#f9fafb] border border-green-800">
             <table class="table-fixed cursor-pointer">
                 <thead>
-                    <tr class="text-white text-sm text-left">
+                    <tr class="text-green-800 text-sm text-left">
                         <th class="w-1/4 p-4"></th>
                         <th class="w-1/12 text-center align-middle">Played</th>
                         <th class="w-1/12 text-center align-middle">Wins</th>
@@ -53,7 +55,7 @@ import { useRouter } from 'vue-router';
                 </thead>
 
                 <tbody class="divide-y divide-gray-600">
-                    <tr class="text-base hover:bg-gray-100/30 transition duration-500" v-for="team in props.teams"
+                    <tr class="text-base hover:bg-gray-100/30 transition duration-500" v-for="team in teams"
                         :key="team.rank">
                         <td class="p-1 flex items-center">
                             <p class="mr-2">{{ team.rank }}.</p>
@@ -102,12 +104,3 @@ import { useRouter } from 'vue-router';
         </div>
     </main>
 </template>
-
-<script lang="ts">
-    export default {
-        name: 'StandingTable',
-        props: {
-            teams: Array,
-        },
-    };
-</script>

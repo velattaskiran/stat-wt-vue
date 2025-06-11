@@ -1,4 +1,5 @@
 export interface IStanding {
+    leagueName:         string;
     teamName:           string;
     teamLogo:           string;
     rank:               number;

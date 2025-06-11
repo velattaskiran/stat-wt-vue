@@ -22,7 +22,7 @@ fetchPlayers();
 
 <template>
     <main id="table">
-        <div class="overflow-x-auto text-white mx-10 md:mt-20 mb-10 rounded-md">
+        <div class="overflow-x-auto bg-[#f9fafb] text-green-800 md:mt-20 mb-10 px-10">
             
             <div v-if="loading" class="grid-center w-full mt-48 md:mt-52">
                 <Loader />
@@ -30,7 +30,7 @@ fetchPlayers();
             
             <table class="table-fixed cursor-pointer">
                 <thead>
-                    <tr class="text-white text-sm text-left">
+                    <tr class="text-green-700 text-sm text-left">
                         <th class="w-1/4 p-4">Name</th>
                         <th class="w-1/6 pl-6 md:pl-0">Age</th>
                         <th class="w-1/6 text-center md:text-start">Position</th>
@@ -44,7 +44,7 @@ fetchPlayers();
                         :key="player.id">
                         <td class="p-1 flex items-center">
                             <!-- <p class="mr-4">{{ player.id }}.</p> -->
-                            <img :src="player.url" :alt="player.name" class="w-10 h-10 rounded-full mr-1" />
+                            <img :src="player.photoUrl" :alt="player.name" class="w-10 h-10 rounded-full mr-1" />
                             <p class="font-bold mr-1 hidden md:block">{{ player.name }}</p>
                         </td>
 
@@ -57,7 +57,7 @@ fetchPlayers();
                         </td>
 
                         <td class="mx-2 md:mx-2">
-                            <p class="mr-4"> {{ player.team_name }} </p>
+                            <p class="mr-4"> {{ player.teamName }} </p>
                         </td>
 
                         <td class="mx-4 md:mx-2">

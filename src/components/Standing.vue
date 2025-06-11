@@ -80,15 +80,15 @@ import StandingService from '../services/StandingService'
         },
 
         methods:{
-            getStanding(){
-                StandingService.getStanding().then((response) => {
+            getStandingByLeagueId(){
+                StandingService.getStandingByLeagueId().then((response) => {
                     this.standing = response.data;
                 });
             }
         },
 
         created() {
-            this.getStanding()
+            this.getStandingByLeagueId()
         }
     }
 </script>

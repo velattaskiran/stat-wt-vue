@@ -24,7 +24,7 @@ fetchTeams();
 
 </script>
 <template>
-    <div class="flex flex-wrap md:flex mt-[120px] mb-[120px] gap-x-12">
+    <div class="flex justify-center flex-wrap bg-[#f9fafb] md:justify-between mt-[81px] mb-[41px] min-h-screen">
         <div v-if="loading" class="grid-center w-full mt-48 md:mt-52">
             <Loader />
         </div>

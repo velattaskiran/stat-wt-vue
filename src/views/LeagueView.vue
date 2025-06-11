@@ -23,14 +23,20 @@ fetchLeagues();
 
 </script>
 <template>
-    <div class="flex-center flex-wrap md:flex-between mt-[120px] mb-[120px]">
+    <div class="flex justify-center flex-wrap bg-[#f9fafb] md:justify-between mt-[81px] mb-[41px] min-h-screen">
         <div v-if="loading" class="grid-center w-full mt-48 md:mt-52">
             <Loader />
         </div>
 
         <div v-else v-for="league in leagues" :key="league.id" class="p-10">
-            <LeagueCard :leagueId="league.id" :leagueName="league.name" :country="league.country" :logoUrl="league.logoUrl" :foundedYear="league.foundedYear"
-                :loading="loading" />
+            <LeagueCard 
+                :leagueId="league.id" 
+                :leagueName="league.name" 
+                :country="league.country" 
+                :logoUrl="league.logoUrl" 
+                :foundedYear="league.foundedYear"
+                :loading="loading" 
+            />
         </div>
     </div>
 </template>
