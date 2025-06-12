@@ -20,21 +20,21 @@ const rotate = () => {
                     <div class="hidden lg:block">
                         <ul class="inline-flex space-x-8">
                             <li class="navbar-li-tag">
-                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-6">
+                                <div class="text-green px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-6">
                                     <router-link to="/leaguesView">
                                         Leagues
                                     </router-link>
                                 </div>
                             </li>
                             <li class="navbar-li-tag">
-                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-8">
+                                <div class="text-green px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-8">
                                     <router-link to="/teamsView">
                                         Teams
                                     </router-link>
                                 </div>
                             </li>
                             <li class="navbar-li-tag">
-                                <div class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
+                                <div class="text-green px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
                                     <router-link to="/playersView">
                                         Players
                                     </router-link>
@@ -45,12 +45,12 @@ const rotate = () => {
                 </div>
                 <div class="hidden lg:block">
                     <ul class="inline-flex space-x-8">
-                        <li class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
+                        <li class="text-green px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
                             <router-link to="/predictionMachineViews">
                                 Prediction Machine
                             </router-link>
                         </li>
-                        <li class="text-white px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
+                        <li class="text-green px-3 py-2 text-sm border border-green-800 hover:bg-green-600 transition duration-200 ease-in outline-none rounded-md md:text-base text-green-800 md:py-2.5 md:px-7">
                             <router-link to="/bettingTipsView">
                                 Betting Tips
                             </router-link>

@@ -75,15 +75,15 @@ import { IFixture } from '../Types/fixtures.interface';
 <template>
     <main id="table">
         <div class="flex justify-center items-center my-5">
-            <button class="px-4 py-2 bg-green-600 text-white rounded-md" @click="previousWeek">
+            <button class="px-4 py-2 text-green-800 rounded-md bg-[#f9fafb] border border-green-800" @click="previousWeek">
                 ←
             </button>
-            <span class="mx-4 text-xl font-bold text-white">Round - {{ currentRoundText }}</span>
-            <button class="px-4 py-2 bg-green-600 text-white rounded-md" @click="nextWeek">
+            <span class="mx-4 text-xl font-bold text-green-800 ">Round - {{ currentRoundText }}</span>
+            <button class="px-4 py-2 text-green-800 rounded-md bg-[#f9fafb] border border-green-800" @click="nextWeek">
                 →
             </button>
         </div>
-        <div class="overflow-x-auto text-white mx-5 mb-10 rounded-md bg-[#012523]">
+        <div class="overflow-x-auto text-green-800 mx-5 mb-10 rounded-md bg-[#f9fafb] border border-green-800">
             <table class="table-fixed cursor-pointer">
                 <tbody class="divide-y divide-gray-600">
                     <tr v-for="fixture in filteredFixtures" :key="fixture.fixtureId" class="hover:bg-[#024D44]">

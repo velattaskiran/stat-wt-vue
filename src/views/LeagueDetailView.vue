@@ -42,7 +42,7 @@ const fetchFixtures  = async () => {
     }
 };
 fetchTeams();
-// fetchFixtures();
+fetchFixtures();
 </script>
 
 <template>
